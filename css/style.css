@@ -1,0 +1,566 @@
+/* start global rules    */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+}
+
+  /* Small */
+@media (min-width: 768px) {
+    .container {
+    width: 750px;
+    }
+}
+
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+    width: 970px;
+    }
+}
+
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+    width: 1170px;
+    }
+}
+/* end of global rules */
+/* start nav  */
+nav{
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+}
+nav .container{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .container .left h1{
+        color: red;
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav .container .right select{
+        margin-right: 20px;
+    background-color: black;
+    padding: 6px 25px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid gray;
+        text-transform: capitalize;
+}
+nav .container .right select:focus{
+    outline: 2px solid white;
+}
+nav .container .right option{
+        background-color: white;
+    color: black;
+    text-transform: capitalize;
+}
+nav .container .right button{
+    padding: 8px 20px;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: 0.2s;
+}
+nav .container .right button:hover{
+    background-color: rgb(202, 7, 7);
+}
+/* end nav  */
+/* start header  */
+header{
+    background-image: url("../photo/EG-ar-20240520-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    height: 90vh;
+    background-position: bottom ;
+    background-size:120%;
+    position: relative;
+}
+header::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 60%);
+}
+header .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    text-align: center;
+}
+
+header .container .text h2 {
+        color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+header .container .text p{
+        margin-top: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+header .container form{
+    margin-top: 30px;
+    position: relative;
+}
+header .container form input[type="search"]{
+    width: 300px;
+    height: 55px;
+    margin-top: 3px;
+    background-color: #00000052;
+    padding: 25px 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: white;
+    text-transform: capitalize;
+}
+header .container form label{
+    position: absolute;
+    color:white ;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 35%;
+    text-transform: capitalize;
+    transition: 0.2s;
+}
+
+header .container form input[type="search"]:focus{
+    outline: 2px solid white;
+}
+header .container form input[type="search"]:focus + label{
+    font-size: 10px;
+    top: 15px;
+    left: 380px;
+}
+header .container form input[type="button"]{
+    padding: 15px 60px 15px  30px;
+    color: white;
+    background-color: red;
+    border: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    bottom: -3px;
+}
+header .container form input[type="button"]:hover{
+    background-color: rgb(202, 7, 7);
+}
+header .container form i{
+    color: #ffffff;
+    right: 362px;
+    bottom: 20px;
+    font-size: 21px;
+    position: absolute;
+}
+/* end header  */
+/* start enjoy  */
+
+.enjoy {
+    background: black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+.enjoy::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(27, 26, 26);
+    top: 0;
+}
+.enjoy .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.enjoy .container .text{
+    flex-basis: 50%;
+}
+.enjoy .container .text h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+.enjoy .container .text p{
+    word-spacing: 5px;
+    color: white;
+    font-size: 20px;
+
+}
+.enjoy .container .play{
+        flex-basis: 50%;
+        position: relative;
+}
+.enjoy .container .play img{
+    position: relative;
+    width: 580px;
+    z-index: 2;
+}
+.enjoy .container .play video{
+    position: absolute;
+    width: 430px;
+    left: 77px;
+    z-index: 1;
+    bottom: 110px;
+}
+
+/* end enjoy  */
+/* start download  */
+.download{
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: black;
+}
+.download::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(27, 26, 26);
+    top: 0;
+}
+.download .container{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.download .container .play img{
+        width: 600px;
+}
+.download .container .play .content{
+    position: relative;
+    border: 3px solid gray;
+    border-radius: 10px;
+    width: 340px;
+    left: 130px;
+    bottom: 145px;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.download .container .play .content::before{
+    content: "";
+    position: absolute;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif");
+    width: 50px;
+    height: 50px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    right: 25px;
+}
+.download .container .play .content img{
+        width: 50px;
+    margin: 20px;
+}
+.download .container .play .content .text h3{
+    color: white;
+}
+.download .container .play .content .text p{
+    color: rgb(48 122 238);
+    margin-top: 5px;
+}
+.download .container .text h2{
+        color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 35px
+}
+.download .container .text p{
+        word-spacing: 5px;
+    color: white;
+    font-size: 20px;
+
+}
+/* end download  */
+/* start watch */
+.watch{
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+}
+.watch::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(27, 26, 26);
+    top: 0;
+}
+.watch .container{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.watch .container .text{
+    flex-basis: 50%;
+}
+.watch .container .text h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+.watch .container .text p{
+    word-spacing: 5px;
+    color: white;
+    font-size: 20px;
+
+}
+.watch .container .play{
+        flex-basis: 50%;
+        position: relative;
+}
+.watch .container .play img{
+    position: relative;
+    width: 580px;
+    z-index: 2;
+}
+.watch .container .play video{
+    position: absolute;
+    width: 374px;
+    left: 100px;
+    z-index: 1;
+    top: 63px;
+}
+
+/* end watch */
+/* start kids  */
+.kids{
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+}
+.kids::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(27, 26, 26);
+    top: 0;
+}
+.kids .container{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.kids .container .text h2{
+        color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 35px
+}
+.kids .container .text p{
+        word-spacing: 5px;
+    color: white;
+    font-size: 20px;
+
+}
+/* end kids  */
+.question{
+        position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+}
+.question::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(27, 26, 26);
+    top: 0;
+}
+.question .container .text h2{
+color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.question .container .text details{
+        padding: 30px;
+    background: rgb(45 45 45);
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.question .container .text details:hover{
+    background-color: rgb(88, 86, 86);
+}   
+.question .container .text details  p{
+        padding-top: 20px;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+
+}
+.question .container form{
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+}
+.question .container .text details summary{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.question .container  .last p{
+    color: #ffffff;
+    font-size: 20   px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30px
+}
+.question .container form input[type="search"]{
+    width: 300px;
+    height: 55px;
+    margin-top: 3px;
+    background-color: #00000052;
+    padding: 25px 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: white;
+    text-transform: capitalize;
+}
+.question .container form label{
+    position: absolute;
+    color:white ;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 35%;
+    text-transform: capitalize;
+    transition: 0.2s;
+}
+
+.question .container form input[type="search"]:focus{
+    outline: 2px solid white;
+}
+.question .container form input[type="search"]:focus + label{
+    font-size: 10px;
+    top: 15px;
+    left: 380px;
+}
+.question .container form input[type="button"]{
+    padding: 15px 60px 15px  30px;
+    color: white;
+    background-color: red;
+    border: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    bottom: -3px;
+}
+.question .container form input[type="button"]:hover{
+    background-color: rgb(202, 7, 7);
+}
+.question .container form i{
+    color: #ffffff;
+    right: 362px;
+    bottom: 20px;
+    font-size: 21px;
+    position: absolute;
+}
+/* end question  */
+/* start footer  */
+footer{
+        position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+}
+footer::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(27, 26, 26);
+    top: 0;
+}
+footer h2{
+    margin-bottom: 30px;
+}
+footer h2 a{
+    color: rgb(114, 113, 113);
+    font-size: 15px;
+}
+footer .links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .links ul{
+    list-style: none;
+}
+footer .links ul li{
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+footer .links ul li a{
+    color: rgb(114, 113, 113);
+    transition: 0.2s;
+}
+footer .links ul li:hover a{
+    color: white;
+}
+
+footer .container  select{
+    background-color: black;
+    padding: 6px 25px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid gray;
+        text-transform: capitalize;
+}
+footer .container select:focus{
+    outline: 2px solid white;
+}
+footer .container option{
+        background-color: white;
+    color: black;
+    text-transform: capitalize;
+}
+
+footer .container p{
+    margin-top: 30px;
+    color:rgb(114, 113, 113) ;
+}
+/* end footer  */
